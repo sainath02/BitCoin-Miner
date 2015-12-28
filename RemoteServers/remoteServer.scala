@@ -42,10 +42,8 @@ class RemoteActor(target: Int) extends Actor {
        // sender ! startMining(target,range)
       sender ! target
     case msg: String => 
-//        println(s"\n---------got message $msg --------------")
         val key = msg.split("::")(0)
         val hash = msg.split("::")(1)
-//        println(s"RemoteActor received message '$msg'")
         println("\n%s\t%s".format(key,hash))
         
     case initMining() =>
