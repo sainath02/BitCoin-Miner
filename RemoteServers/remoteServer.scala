@@ -96,7 +96,7 @@ class Worker(target : Int, range: Int) extends Actor{
   def getRandomKey(): String = {
     val len = Random.nextInt(15)
     val chars = ('a' to 'z') ++ ('A' to 'Z') ++ ('0' to '9')
-    "chennakesava+siva92;"+randomStringFromCharList(len,chars)
+    "siva92;"+randomStringFromCharList(len,chars)
   }
   
   def randomStringFromCharList(length: Int, chars: Seq[Char]): String = {
